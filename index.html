@@ -7,72 +7,124 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="logo_1.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Hlavní stránka</a>
+        <a id="ucebnice">e-Učebnice</a>
+        <a href="https://etesty2.mdcr.cz/Home/Tests/ro">e-Testy</a>
+        <a href="login.html">Přihlášení</a>
+        <!-- <a href="#contact">Stránka</a> !-->
+        <!-- <a href="#about">Stránka</a> !-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div> <br>
+
     <header>
     <img src="logo_removebg.png" height="150px">
     <b>Vítejte na stránkách autoškoly Kryštof</b>
     </header> <br> <br>
-    <div class="photoHolder">
-        <div class="button-container">
-            <button onclick="showParagraph(0)"></button>
-            <button onclick="showParagraph(1)"></button>
-            <button onclick="showParagraph(2)"></button>
-            <button onclick="showParagraph(3)"></button>
-            <button onclick="showParagraph(4)"></button>
-          </div>
-      
-          <div class="scroll-content">
-            <p class="paragraph active">Garantovaná úspěšnost autoškoly přes 90%</p>
-            <p class="paragraph">Přívětivý instruktoři a možnost výběru z rozsáhlého autoparku</p>
-            <p class="paragraph">Bezkonkurenční cena 17,900Kč za 6 týdenní kurz přímo v centru Brna</p>
-            <p class="paragraph">Individuální přístup, možnost prodloužení kurzu dle potřeby</p>
-            <p class="paragraph">Žádné přirážky a skryté poplatky</p>
-          </div> 
-    </div> <br> <br>
+
+<div class="videoHolder">
+    <p class="videoText"><u>Naše youtube videa</u></p>
+    <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/P3exwB2T6pU"
+    frameborder="0" allow="accelerometer;
+    autoplay;
+    clipboard-write;
+    encrypted-media;
+    gyroscope;
+    picture-in-picture"
+    allowfullscreen></iframe>
+</div> <br> <br>
+
+<div class="photoHolder">
+    <div class="button-container">
+        <button onclick="showParagraph(0)" id="btn-0"></button>
+        <button onclick="showParagraph(1)" id="btn-1"></button>
+        <button onclick="showParagraph(2)" id="btn-2"></button>
+        <button onclick="showParagraph(3)" id="btn-3"></button>
+        <button onclick="showParagraph(4)" id="btn-4"></button>
+    </div>
+    <div class="scroll-content">
+        <p class="paragraph active">Garantovaná úspěšnost autoškoly přes 90%</p>
+        <p class="paragraph">Přívětivý instruktoři a možnost výběru z rozsáhlého autoparku</p>
+        <p class="paragraph">Bezkonkurenční cena 17,900Kč za 6 týdenní kurz přímo v centru Brna</p>
+        <p class="paragraph">Individuální přístup, možnost prodloužení kurzu dle potřeby</p>
+        <p class="paragraph">Žádné přirážky a skryté poplatky</p>
+    </div>
+</div> <br> <br>
+
+
     <div class="text-holder">
         <div class="photo">
-            <img src="placeholder.png">
+            <img src="placeholder-rmvbg.png">
         </div>
         <p class="text">
-            Jmenuji se [Vaše jméno] a jsem učitel autoškoly s bohatými zkušenostmi, včetně práce jako komisař. Tato pozice mi umožnila vidět, jak studenti rostou a stávají se sebevědomými řidiči.
-
-            Nyní jsem se rozhodl založit vlastní autoškolu, kde se zaměřuji na kvalitní výuku a bezpečné řízení. Naším cílem je poskytnout studentům nejen přípravu na zkoušky, ale také praktické dovednosti pro reálný provoz. Věřím, že učení by mělo být přátelské a motivující, a těším se na společnou cestu k získání řidičského oprávnění!
-        </p>
+            Jmenuji se Roman Kalda a jako učitel autoškoly mám dvanáctiletou praxi
+            ve výuce a výcviku uchazečů o řidičské oprávnění, pět let jsem také
+            pracoval jako zkušební komisař řidičů. Na vysoké škole jsem získal titul
+            Bc. v oboru Učitelství praktické přípravy a titul Mgr. v oboru
+            Učitelství ekonomických předmětů, proto mám k práci se studenty velice
+            blízko.
+            Po 20 letech práce na hlavní pracovní poměr jako zaměstnanec jsem se
+            rozhodl přijmout výzvu a založit si vlastní autoškolu.
+        
+        
+            <br><br>
+            · jmeno.prijmeni@autoskola.cz
+            <br>
+            · Tel. číslo: +420 777 11 11 11
+    </p>
     </div> <br> <br>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
-                <h4><u>Odkazy</u></h4>
+                <h4><u>Důležité soubory</u></h4>
                 <ul>
-                  <li><a href="#about">Ceník</a></li>
-                  <li><a href="#about">Důležité soubory</a></li>
-                  <li><a href="#about">Smluvní podmínky</a></li>
+                  <li><a href="cenik.pdf">Ceník</a></li>
+                  <li><a href="zadost.pdf">Žádost o přijetí k výuce</a></li>
+                  <li><a href="zpusobilost.pdf">Posudek o zdravotní způsobilosti</a></li>
+                  <li><a href="smluvni_podminky.pdf">Smluvní podmínky</a></li>
                 </ul>
             </div>
             <div class="footer-social">
                 <h4><u>Sledujte nás na sociálních sítích</u></h4>
                 <div class="social-icons">
     
-                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
-                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook"></a>
+                    <a id="instagram"><img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                    alt="Instagram"></a>
+                    <a id="facebook"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"
+                    alt="Facebook"></a>
+
                 </div>
             </div>
             <div class="footer-contact">
                 <h4><u>Kde nás najít?</u></h4>
-                <i>Adresa 1/100, Brno-střed</i>
+                <i>Naše provozovna se nachází zhruba 5 minut
+                    od hlavního nádraží. Dostanete se k nám
+                    šalinou číslo 12 :-) 
+                </i>
                 <br><br>
                 <div class="social-icons">
-                  <a href="#"><img src="https://www.nastennemapy.cz/file/20646/mestacr004-1.jpg" alt="Instagram" height=200px></a>
+                    <div id="map"></div>
               </div>
-                <p></p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Autoškola Kryštof</p>
-            <i class="mtFooter">vytvořil Tobias Hložek</i>
+            <p>&copy; <b>2024 Autoškola Kryštof</b></p>
+            <i class="mtFooter">vytvořil Tobias Hložek</i> <a href="aboutcreator.html">.</a>
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 </html>
