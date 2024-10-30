@@ -1,23 +1,30 @@
 body{
-  background-color: aliceblue;
+  margin: 1;
+  padding: 1;
+  background-color: rgb(217, 237, 255);
 }
 header{
- background-color: grey;
+ background-color: aliceblue;
  display: flex;
  justify-content: center; 
  align-items: center; 
  padding: 40px;
- border-radius: 20px 10px;
+ border-radius: 20px;
  font-size: 2em;
  font-family: Verdana;
  height: 100px;
+ border: solid;
+}
+h1{
+  text-align: center;
 }
 #instagram, #facebook{
 cursor: pointer;
 }
 .photoHolder{
    height: 800px;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('auto_4.jpg');
+   /*linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), */
+   background-image: url('auto_3.jpg');
    background-size: cover;
    background-position: center;
    border-radius: 10px;
@@ -26,18 +33,20 @@ cursor: pointer;
    flex-direction: column;
    justify-content: space-between;
    align-self: center;
+   border: solid;
 }
 .videoHolder{
-background-color: rgb(0, 0, 59);
+background-color: aliceblue;
 padding: 20px;
 border-radius: 20px 20px 10px;
 align-items: center;
 justify-content: center;
 align-self: center;
 display: flex;
+border: solid;
 }
 .videoText{
-color: lightblue;
+color: black;
 font-weight: bold;
 font-size: 2em;
 font-family: 'Times New Roman', Times, serif;
@@ -48,10 +57,11 @@ padding-right: 10%;
 display: flex;
 justify-content: flex-start;
 align-items: flex-start;
-background-color: rgb(0, 0, 59);
-color: lightblue;
+background-color: aliceblue;
+color: black;
+border: solid;
 padding: 40px;
-border-radius: 25px 15px;
+border-radius: 20px;
 box-sizing: border-box;
 }
 
@@ -88,14 +98,13 @@ padding: 10px 20px;
 font-size: 14px;
 cursor: pointer;
 border: solid;
-border-color: white;
 background-color: rgba(0, 0, 0, 0);
 border-radius: 5px;
 transition: background-color 0.3s;
 }
 
 .button-container button:hover {
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(255, 255, 255, 0.420);
 }
 
 .scroll-content {
@@ -121,7 +130,7 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 .button-container button.active {
- background-color: midnightblue; 
+ background-color: aliceblue; 
 }
 
 @keyframes fadeIn {
@@ -134,11 +143,12 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 .footer {
- background-color: #2c3e50;
- color: white;
+ background-color: aliceblue;
+ color: black;
  padding: 40px 0;
  font-family: Arial, sans-serif;
  border-radius: 10px;
+ border: solid;
 }
 
 .footer-container {
@@ -171,7 +181,7 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-links a {
- color: #ecf0f1;
+ color: black;
  text-decoration: none;
 }
 
@@ -200,35 +210,38 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 .mtFooter{
- color: #79a5d3;
+ color: rgb(94, 94, 94);
  font-size: 0.75em;
  font-family: Helvetica;
 }
 
 .topnav {
 overflow: hidden;
-background-color: #333;
+background-color: aliceblue;
+border: solid;
 border-radius: 5px;
 }
 
 .topnav a {
 float: left;
 display: block;
-color: #f2f2f2;
+color: black;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
+cursor: pointer;
 }
 
 .topnav a:hover {
-background-color: #ddd;
+background-color: gainsboro;
 color: black;
 }
 
 .topnav a.active {
-background-color: lightblue;
-color: blue;
+background-color: rgb(207, 232, 255);
+font-weight: bold;
+color: black;
 }
 
 .topnav .icon {
@@ -258,6 +271,72 @@ display: none;
 }
 
 #map {
+  border: solid;
 height: 250px;
 width: 400px;
 }
+
+    /* Popup background overlay */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Popup content box */
+    .popup-content {
+      border: solid;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff4d4d;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    /* Button to open popup */
+    .open-popup-btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #phone{
+      background-color: rgba(0,0,0,0.1);
+      padding: 10px;
+      border: solid;
+      border-radius: 10px;
+      transition: background-color 0.25s;
+      cursor: pointer;
+    }
+    #phone:hover{
+      background-color: rgba(0,0,0,0.2);
+    }

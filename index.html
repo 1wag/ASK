@@ -14,12 +14,15 @@
 
     <div class="topnav" id="myTopnav">
         <a href="#" class="active">Hlavní stránka</a>
+        <a href="onas.html">O nás</a>
+        <a href="sluzby.html">Služby a ceník</a>
         <a href="recenze.html">Recenze</a>
         <a href="zkousky.html">Závěrečné zkoušky</a>
         <a id="ucebnice">e-Učebnice</a>
         <a id="testy">e-Testy</a>
-        <a href="login.html">Přihlášení</a>
-        <a href="settings.html">Nastavení</a>
+        <a href="form.html">Přihlášení</a>
+        <a onclick="openPopup()">Nastavení</a>
+        <!-- <a href="settings.html">Nastavení</a> !-->
         <!-- <a id="czech">🇨🇿</a>
         <a id="english">🇬🇧 / 🇺🇸</a> !-->
         <!-- <a href="#contact">Stránka</a> !-->
@@ -28,6 +31,14 @@
           <i class="fa fa-bars"></i>
         </a>
       </div> <br>
+
+      <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+          <button class="close-btn" onclick="closePopup()">&times;</button>
+          <h2>Přejete si přepnout stránku do mobilního režimu?</h2>
+          <button id="phone"><img height="100px"src="phone.png"></button>
+        </div>
+      </div>
 
     <header>
     <img src="logo_removebg.png" height="150px">
@@ -39,7 +50,7 @@
     <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/P3exwB2T6pU"
+    src="https://www.youtube.com/embed/6Tlbh4QwIow"
     frameborder="0" allow="accelerometer;
     autoplay;
     clipboard-write;
@@ -58,42 +69,20 @@
         <button onclick="showParagraph(4)" id="btn-4"></button>
     </div>
     <div class="scroll-content">
-        <p class="paragraph active">Garantovaná úspěšnost autoškoly přes 90%</p>
-        <p class="paragraph">Přívětivý instruktoři a možnost výběru z rozsáhlého autoparku</p>
-        <p class="paragraph">Bezkonkurenční cena 17,900Kč za 6 týdenní kurz přímo v centru Brna</p>
-        <p class="paragraph">Individuální přístup, možnost prodloužení kurzu dle potřeby</p>
+        <p class="paragraph active">Bezkonkurenční cena za rychlokurz přímo v centru Brna</p>
+        <p class="paragraph">Přívětivý instruktor</p>
+        <p class="paragraph">Vysoká úspěšnost studentů</p>
+        <p class="paragraph">Individuální přístup</p>
         <p class="paragraph">Žádné přirážky a skryté poplatky</p>
     </div>
-</div> <br> <br>
-
-
-<div class="text-holder">
-    <div class="photo">
-        <img src="placeholder-rmvbg.png">
-    </div>
-    <div class="text">
-        <p>
-            Jmenuji se Roman Kalda a jako učitel autoškoly mám dvanáctiletou praxi
-            ve výuce a výcviku uchazečů o řidičské oprávnění, pět let jsem také
-            pracoval jako zkušební komisař řidičů. Na vysoké škole jsem získal titul
-            Bc. v oboru Učitelství praktické přípravy a titul Mgr. v oboru
-            Učitelství ekonomických předmětů, proto mám k práci se studenty velice
-            blízko. Po 20 letech práce na hlavní pracovní poměr jako zaměstnanec
-            jsem se rozhodl přijmout výzvu a založit si vlastní autoškolu.
-        </p>
-        <div class="contact-info">
-            <p><span class="bold">· info@autoskola-krystof.cz</span></p>
-            <p><span class="bold">· Tel. číslo: +420 739 036 587</span></p>
-        </div>
-    </div>
-</div>
+</div> 
  <br> <br>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
                 <h4><u>Důležité soubory</u></h4>
                 <ul>
-                  <li><a href="cenik.pdf">Ceník</a></li>
+                  <!-- <li><a href="cenik.pdf">Ceník</a></li> !-->
                   <li><a href="zadost.pdf">Žádost o přijetí k výuce</a></li>
                   <li><a href="zpusobilost.pdf">Posudek o zdravotní způsobilosti</a></li>
                   <li><a href="smluvni_podminky.pdf">Smluvní podmínky</a></li>
@@ -126,7 +115,8 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; <b>2024 Autoškola Kryštof</b></p>
-            <img src="emoji.png" height="15px;" href="aboutcreator.html"> <a href="aboutcreator.html" class="mtFooter">vytvořil Tobias Hložek</a>
+            <!--<img src="emoji.png" height="15px;" href="aboutcreator.html"> !-->
+            <a href="aboutcreator.html" class="mtFooter">vytvořil Tobias Hložek</a>
         </div>
     </footer>
     <script src="index.js"></script>

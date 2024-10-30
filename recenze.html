@@ -3,70 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zkoušky</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Recenze</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="logo_1.jpg">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        h1 {
+        .a1{
             font-size: 5em;
-            color: rgb(226, 226, 226);
-            text-shadow: 1px 1px 4px #000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            scroll-snap-align: start;
-            
-            padding-top: 200px;
-            text-align: center;
+            padding: 20px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            border: solid;
         }
-        section {
-            height: 100vh;
-
-        }
-        .one {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('200w.gif');
-            background-size: cover;
-            background-position: center;
-        }
-        .btn{
-            padding-top: 10px;
-            padding-right: 10px;
-            font-size: 1em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.420);
-            color: white;
-        }
-        a{
-            color: white;
-        }
-
 
     </style>
 </head>
 <body>
-    
-    <div>
-        
-        <section class="one">
-            <button class="btn"> <a href="index.html">zpět</a></button>
-            <h1>Naši absolventi</h1>
-           
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Hlavní stránka</a>
+        <a href="onas.html">O nás</a>
+        <a href="sluzby.html">Služby a ceník</a>
+        <a href="#" class="active">Recenze</a>
+        <a href="zkousky.html">Závěrečné zkoušky</a>
 
-        </section>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars">☰</i>
+        </a>
+      </div> 
+      <h1 class="a1">Naši absolventi</h1>
 
 
+
+
+      <script src="index.js"></script>
 </body>
 </html>
