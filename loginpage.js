@@ -32,7 +32,6 @@ function animateParticles() {
     p.x += p.dx;
     p.y += p.dy;
 
-    // Bounce off edges
     if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
     if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
 

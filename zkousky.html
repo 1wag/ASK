@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zkoušky</title>
+    <link rel="icon" type="image/x-icon" href="logo_1.jpg">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h1 {
+            font-size: 3em;
+            color: rgb(226, 226, 226);
+            text-shadow: 1px 1px 4px #000;
+        }
+        p {
+            font-size: 1.2em;
+            color: rgb(226, 226, 226);
+            text-shadow: 1px 1px 4px #000;
+            margin: 20px 0;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            padding: 20px;
+            text-align: center;
+        }
+        .one {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('ucebna.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .two{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('magistrat.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .three{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('kruhac.jpg');
+            background-size: cover;
+            background-position: center;          
+        }
+        .container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .navrat{
+            font-weight: bold;
+            background-color: cornflowerblue;
+            color: aliceblue;
+            border-radius: 50px;
+            padding: 20px;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+        .navrat:hover{
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="one">
+            <h1>Teoretická zkouška z pravidel silničního provozu (e-Testy)</h1>
+            <!-- <p>Test se koná na počítači, uchazeč odpovídá na 25 otázek, kde lze získat maximálně 50 bodů.</p> !-->
+            <!-- <p>První část závěrečné zkoušky je teoretická tzv. "testy". Žadatel o ŘO je povinnen zodpovědět
+                25 otázek ze sbírky e-Testů. Doporučujeme testy pravidelně procvičovat na doméně <a href="https://etesty2.mdcr.cz/Home/Tests/ro">mdcr</a>.
+                Teoretické části se žák účastní bezprostředně před praktickou částí závěrečných zkoušek.
+                Pokud žák při teoretické zkoušce neobstojí, nebude připuštěn ke zkoušce praktické. !-->
+                <p>Test se koná na počítači, uchazeč odpovídá na 25 otázek, kde lze získat maximálně 50 bodů.
+                <br> Počítač vybírá z předem připravených otázek, které zahrnují různá témata, jako například: <br>
+                 <br> - pojmy a povinnosti,
+                     <br> - dopravní značky,
+                     <br> - dopravní situace,
+                      <br> - zdravotnická příprava.</p>
+                <br> <p>Pro úspěšné absolvování teoretické zkoušky musí uchazeč získat minimálně 43 bodů.</p>
+                <br> <p>S námi se testů nemusíte bát! Naše autoškola Vám poskytne potřebné materiály a připraví
+                    Vás na různé chytáky. <br> Budete mít k dispozici například fyzickou i online verzi učebnice Schröter
+                     či dobrovolné doučovací lekce.
+                </p> <br>
+                <p>Po absolvování e-Testů budete připuštěni k druhé části zkoušky, kterou si popíšeme na dalším slidu.
+                <br>↓</p>
+            </p>
+        </section>
+        <section class="two">
+            <h1>Praktická zkouška</h1>
+            <p>Tato část probíhá za přítomnosti komisaře. <br>
+                Zkouška začíná kontrolou technického stavu vozidla.<br>
+                Poté následuje zhruba 30-45ti minutová jízda, při které komisař vyhodnotí, zda dokážete vozidlo
+                bezpečně a plynule ovládat. <br>
+                V případě úspěšného absolvování si můžete zažádat o řidičský průkaz.
+            </p><br><p>↓</p>
+            <!--
+            <p>Praktická zkouška tzv. "jízda" je druhá část zkoušky o ŘO, tato zkouška probíhá v autě pod dohledem komisaře, který boduje vaši jízdu,
+                m.j. také prověřuje vaši technickou znalost vozidla. Komisař se v průběhu jízdy může ptát na teoretické otázky.
+                V případě obstání u obou částí zkoušky je uchazeči uděleno řidičské oprávnění.-->
+            </p>
+        </section>
+        <section class="three">
+            <button onclick="window.location.href='index.html'" class="navrat">Vrátit se zpět</button>
+            <p>Pokud byste měli nějaké další dotazy ohledně závěrečných zkoušek, neváhejte nás kontaktovat! Rádi Vám pomůžeme :)</p>
+        </section>
+    </div>
+
+</body>
+</html>

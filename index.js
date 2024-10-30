@@ -10,6 +10,10 @@ document.getElementById("ucebnice").addEventListener("click", function() {
   window.open("https://www.schroter.cz/pristup/kr02jm/brno-krystof.pdf");
 });
 
+document.getElementById("testy").addEventListener("click", function() {
+  window.open("https://etesty2.mdcr.cz/Home/Tests/ro");
+});
+
 
 let currentParagraphIndex = 0;
 let totalParagraphs = document.querySelectorAll('.paragraph').length;
@@ -39,7 +43,7 @@ function startAutoCycle() {
     interval = setInterval(() => {
         currentParagraphIndex = (currentParagraphIndex + 1) % totalParagraphs;
         showParagraph(currentParagraphIndex);
-    }, 5000);
+    }, 7000);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
