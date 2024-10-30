@@ -72,3 +72,19 @@ function myFunction() {
 
     marker.bindPopup("<b>Autoškola Kryštof</b><br>Komárovská 666/3, 617 00 Brno-jih-Komárov").openPopup();
   });
+
+    // Function to open popup and disable scrolling
+    function openPopup() {
+      document.getElementById('popupOverlay').style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+    }
+
+    // Function to close popup and enable scrolling
+    function closePopup() {
+      document.getElementById('popupOverlay').style.display = 'none';
+      document.body.style.overflow = ''; // Enable scrolling
+    }
+
+    document.getElementById('phone').onclick = function() {
+      window.location.href = 'mobilni.html'; // URL, na kterou chcete přejít
+    };
