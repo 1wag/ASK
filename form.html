@@ -6,6 +6,16 @@
   <title>Přihlášení</title>
   <link rel="icon" type="image/x-icon" href="logo_1.jpg">
   <link rel="stylesheet" href="loginpage.css">
+  <style>
+    
+    #text-input {
+        display: none; 
+    }
+
+    #toggle-checkbox:checked + #text-input {
+        display: inline-block;
+    }
+</style>
 </head>
 <body>
   <canvas id="background"></canvas>
@@ -17,13 +27,33 @@
       <input type="text" name="surname" placeholder="Přijmení">
       <input type="text" name="email" placeholder="Emailová adresa">
       <input type="password" name="phone" placeholder="Telefonní číslo">
+
+      <p>Mám slevový kód</p>
+      
+        <input type="checkbox" id="toggle-checkbox">
+        
+
+    <input type="text" id="text-input" placeholder="Slevový kód">
+
       <button type="submit">Podat přihlášku</button>
       <a class="return" href="index.html">Vrátit se zpět ⤴</a>
     </form>
     <br> <br>
     <a class="return" href="login.html">Už mám účet</a>
   </div>
+  <script>
+    
+    const checkbox = document.getElementById('toggle-checkbox');
+    const textInput = document.getElementById('text-input');
 
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            textInput.style.display = 'inline-block'; // Zobrazí pole
+        } else {
+            textInput.style.display = 'none'; // Skryje pole
+        }
+    });
+</script>
   <script src="loginpage.js"></script>
 </body>
 </html>
