@@ -1,6 +1,6 @@
 # [Webové stránky autoškoly Kryštof]
 
-![](https://prnt.sc/BsSU2BjXHJvw)
+[](https://prnt.sc/BsSU2BjXHJvw)
 
 ## O projektu
 
