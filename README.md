@@ -1,6 +1,6 @@
 # [Webové stránky autoškoly Kryštof]
 
-![Website Screenshot](./screenshot.png) <!-- Replace with a screenshot of your website if available -->
+![Website Screenshot](https://prnt.sc/BsSU2BjXHJvw)
 
 ## O projektu
 
