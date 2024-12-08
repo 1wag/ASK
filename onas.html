@@ -6,6 +6,12 @@
     <title>O nás</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="logo_1.jpg">
+    <style>
+            #timer {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
 
@@ -24,8 +30,14 @@
         </a>
       </div>
     <br> <br>
+    <div class="text-holder">
+        <div style="text-align: center;"class="text">
+            <p>Výuku provozujeme od srpna 2024.</p>
+            <div id="timer">Načítám...</div>
+        </div>
+    </div>
 
-
+<br>
 <div class="text-holder">
     <div class="photo">
         <img src="placeholder-rmvbg.png">
@@ -46,6 +58,36 @@
         </div>
     </div>
 </div>
+<script>
+    // Cílové datum (1. srpna 2024, 0:00)
+    const startDate = new Date('2024-08-01T00:00:00');
+
+    // Funkce na výpočet uplynulého času
+    function updateElapsedTime() {
+        const now = new Date();
+        const elapsedTime = now - startDate; // Rozdíl v milisekundách
+
+        // Převod milisekund na dny, hodiny, minuty, sekundy
+        const seconds = Math.floor(elapsedTime / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+
+        const displaySeconds = seconds % 60;
+        const displayMinutes = minutes % 60;
+        const displayHours = hours % 24;
+
+        // Zobrazení výsledků
+        document.getElementById('timer').textContent =
+            `${days} dní, ${displayHours} hodin, ${displayMinutes} minut, ${displaySeconds} sekund`;
+    }
+
+    // Spuštění každou sekundu
+    setInterval(updateElapsedTime, 1000);
+
+    // První volání pro okamžité zobrazení
+    updateElapsedTime();
+</script>
 <script src="index.js"></script>
 </body>
 </html>
