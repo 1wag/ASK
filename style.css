@@ -4,7 +4,6 @@ body{
   background-color: rgb(217, 237, 255);
 }
 header{
- background-color: aliceblue;
  display: flex;
  justify-content: center; 
  align-items: center; 
@@ -13,7 +12,6 @@ header{
  font-size: 2em;
  font-family: Verdana;
  height: 100px;
- border: solid;
 }
 h1{
   text-align: center;
@@ -36,14 +34,13 @@ cursor: pointer;
    border: solid;
 }
 .videoHolder{
-background-color: aliceblue;
+
 padding: 20px;
 border-radius: 20px 20px 10px;
 align-items: center;
 justify-content: center;
 align-self: center;
 display: flex;
-border: solid;
 }
 .videoText{
 color: black;
@@ -57,9 +54,8 @@ padding-right: 10%;
 display: flex;
 justify-content: flex-start;
 align-items: flex-start;
-background-color: aliceblue;
+
 color: black;
-border: solid;
 padding: 40px;
 border-radius: 20px;
 box-sizing: border-box;
@@ -143,12 +139,10 @@ background-color: rgba(255, 255, 255, 0.420);
 }
 
 .footer {
- background-color: aliceblue;
  color: black;
  padding: 40px 0;
  font-family: Arial, sans-serif;
  border-radius: 10px;
- border: solid;
 }
 
 .footer-container {

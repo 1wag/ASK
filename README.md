@@ -1,4 +1,4 @@
-# Webové stránky autoškoly Kryštof
+# [Webové stránky autoškoly Kryštof]
 
 ## O projektu
 
