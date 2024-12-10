@@ -32,6 +32,7 @@ cursor: pointer;
    justify-content: space-between;
    align-self: center;
    border: solid;
+   border-width: 1px;
 }
 .videoHolder{
 
@@ -96,11 +97,12 @@ cursor: pointer;
 border: solid;
 background-color: rgba(0, 0, 0, 0);
 border-radius: 5px;
+border-width: 1px;
 transition: background-color 0.3s;
 }
 
 .button-container button:hover {
-background-color: rgba(255, 255, 255, 0.420);
+background-color: rgba(255, 255, 255, 0.500);
 }
 
 .scroll-content {
@@ -126,7 +128,7 @@ background-color: rgba(255, 255, 255, 0.420);
 }
 
 .button-container button.active {
- background-color: aliceblue; 
+ background-color: rgba(240, 248, 255, 0.700); 
 }
 
 @keyframes fadeIn {
@@ -213,6 +215,7 @@ background-color: rgba(255, 255, 255, 0.420);
 overflow: hidden;
 background-color: aliceblue;
 border: solid;
+border-width: 1px;
 border-radius: 5px;
 }
 
@@ -266,6 +269,8 @@ display: none;
 
 #map {
   border: solid;
+  border-radius: 5px;
+  border-width: 1px;
 height: 250px;
 width: 400px;
 }
@@ -333,4 +338,10 @@ width: 400px;
     }
     #phone:hover{
       background-color: rgba(0,0,0,0.2);
+    }
+
+
+    .l{
+        display: flex;
+        justify-content: space-between;
     }
