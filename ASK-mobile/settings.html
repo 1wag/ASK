@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zkoušky</title>
+    <link rel="icon" type="image/x-icon" href="logo_1.jpg">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h1 {
+            font-size: 3em;
+            color: rgb(226, 226, 226);
+            text-shadow: 1px 1px 4px #000;
+        }
+        p {
+            font-size: 1.2em;
+            color: rgb(226, 226, 226);
+            text-shadow: 1px 1px 4px #000;
+            margin: 20px 0;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            padding: 20px;
+            text-align: center;
+        }
+        .one {
+            background-color: gainsboro;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .navrat{
+            font-weight: bold;
+            background-color: cornflowerblue;
+            color: aliceblue;
+            border-radius: 50px;
+            padding: 20px;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+        .navrat:hover{
+            background-color: dodgerblue;
+        }
+        .btn{
+            background-color: rgba(0, 0, 0, 0.65);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="one">
+            <h1>Změna režimů</h1> <br>
+            <p></p>
+            <div class="btn">
+            <img height="300px;"src="https://static.vecteezy.com/system/resources/thumbnails/044/812/078/small_2x/sleek-desktop-computer-icon-on-a-transparent-background-png.png">
+        </div> <br>
+        <p></p>
+        <a href="index.html">zpět</a>
+        </section>
+    </div>
+
+</body>
+</html>

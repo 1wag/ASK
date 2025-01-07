@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nás</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo_1.jpg">
+    <style>
+            #timer {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Hlavní stránka</a>
+        <a href="#" class="active">O nás</a>
+        <a href="sluzby.html">Služby a ceník</a>
+        <a href="recenze.html">Recenze</a>
+        <a href="zkousky.html">Závěrečné zkoušky</a>
+        <!--<a id="ucebnice">e-Učebnice</a>
+        <a id="testy">e-Testy</a>
+        <a href="login.html">Přihlášení</a>
+        <a onclick="openPopup()">Nastavení</a> !-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars">☰</i>
+        </a>
+      </div>
+    <br> <br>
+    <div class="text-holder">
+        <div style="text-align: center;"class="text">
+            <p>Výuku provozujeme od srpna 2024.</p>
+            <div id="timer">Načítám...</div>
+        </div>
+    </div>
+<hr>
+<br>
+<div class="text-holder">
+    <div class="photo">
+        <img src="placeholder-rmvbg.png">
+    </div>
+    <div class="text">
+        <p>
+            Jmenuji se Roman Kalda a jako učitel autoškoly mám dvanáctiletou praxi
+            ve výuce a výcviku uchazečů o řidičské oprávnění, pět let jsem také
+            pracoval jako zkušební komisař řidičů. Na vysoké škole jsem získal titul
+            Bc. v oboru Učitelství praktické přípravy a titul Mgr. v oboru
+            Učitelství ekonomických předmětů, proto mám k práci se studenty velice
+            blízko. Po 20 letech práce na hlavní pracovní poměr jako zaměstnanec
+            jsem se rozhodl přijmout výzvu a založit si vlastní autoškolu.
+        </p>
+        <div class="contact-info">
+            <p><span class="bold">· info@autoskola-krystof.cz</span></p>
+            <p><span class="bold">· Tel. číslo: +420 739 036 587</span></p>
+        </div>
+    </div>
+</div>
+<hr> <br>
+<div class="text-holder">
+    <div class="photo">
+        <img src="auto_silueta.png">
+    </div>
+    <div class="text">
+        <p>
+            Autoškola Kryštof se nachází v klidném areálu v Komárově, což je ideální místo pro začátečníky, kteří se chtějí v klidu naučit základům řízení. Tato lokalita nabízí dostatek prostoru pro první jízdy a trénink rozjezdů, takže se nemusíte bát rušného provozu.
+
+            Pro výuku používáme moderní a pohodlné auto Volkswagen Polo, které je skvělé nejen na učení, ale i na delší jízdy. Je vybavené řadou bezpečnostních funkcí, jako je asistence při brzdění nebo parkovací senzory, což zajišťuje maximální komfort a bezpečnost při každé jízdě. Přijďte si to vyzkoušet a přesvědčte se sami!
+        </p>
+        <div class="contact-info">
+            <p><span class="bold">· Komárovská 666/3, 617 00 Brno-jih-Komárov</span></p>
+        </div>
+    </div>
+</div>
+<script>
+    // Cílové datum (1. srpna 2024, 0:00)
+    const startDate = new Date('2024-08-01T00:00:00');
+
+    // Funkce na výpočet uplynulého času
+    function updateElapsedTime() {
+        const now = new Date();
+        const elapsedTime = now - startDate; // Rozdíl v milisekundách
+
+        // Převod milisekund na dny, hodiny, minuty, sekundy
+        const seconds = Math.floor(elapsedTime / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+
+        const displaySeconds = seconds % 60;
+        const displayMinutes = minutes % 60;
+        const displayHours = hours % 24;
+
+        // Zobrazení výsledků
+        document.getElementById('timer').textContent =
+            `${days} dní, ${displayHours} hodin, ${displayMinutes} minut, ${displaySeconds} sekund`;
+    }
+
+    // Spuštění každou sekundu
+    setInterval(updateElapsedTime, 1000);
+
+    // První volání pro okamžité zobrazení
+    updateElapsedTime();
+</script>
+<script src="index.js"></script>
+</body>
+</html>
